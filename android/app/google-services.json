@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "474758904225",
+    "firebase_url": "https://socio-5020b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "socio-5020b",
+    "storage_bucket": "socio-5020b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474758904225:android:756c89d7dbef19a368b3e0",
+        "android_client_info": {
+          "package_name": "com.example.socio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5qJe4yAoI-JQbBmftIxzbCL9NxVTVfnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
