@@ -11,6 +11,7 @@ import '../../constant/app_string_constants.dart';
 import '../../util/service_locator.dart';
 import '../../util/utils.dart';
 import '../../util/widget_utility.dart';
+import '../home_tab/home_tab_view.dart';
 import '../theme/app_colors.dart';
 import '../theme/text_styles.dart';
 import '../widgets/custom_text_field.dart';
@@ -302,7 +303,7 @@ class _PersonalDetailScreenState extends State<PersonalDetailScreen> {
       },
       onSuccess: () {
         SoLoader.hideLoader();
-        // Navigator.of(context).pushNamedAndRemoveUntil(CongratulationsScreen.route, (route) => false,);
+        Navigator.of(context).pushNamedAndRemoveUntil(HomeTabView.route, (route) => false,);
       },
       onFailure: (errorMessage) {
         SoLoader.hideLoader();

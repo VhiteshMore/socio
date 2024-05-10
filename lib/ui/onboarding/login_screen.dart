@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:socio/constant/args.dart';
+import 'package:socio/index.dart';
 import 'package:socio/ui/onboarding/personal_details_screen.dart';
 
 
@@ -133,7 +134,7 @@ class _LoginScreenState extends State<LoginScreen> {
       onSuccess: ({required userRegistered, required uid}) {
           SoLoader.hideLoader();
           if (userRegistered) {
-
+            Navigator.of(context).pushNamedAndRemoveUntil(HomeTabView.route, (route) => false,);
           } else {
             Navigator.of(context).pushNamed(PersonalDetailScreen.route, arguments: {Args.argIsRegistration: true, Args.argEmailId: bloc.emailTextController.text, Args.argsUid: uid});
           }
